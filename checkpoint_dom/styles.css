@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.panier {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panier h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#total span {
+    font-weight: bold;
+}
+
+
+
+/* Ajoutez ces styles pour le bouton "Aimer" */
+.aimer {
+    width: 30px;
+    height: 30px;
+    background-image: url("icon-coeur.png");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.aimer.aimé {
+    background-image: url("icon-heart.png");
+}

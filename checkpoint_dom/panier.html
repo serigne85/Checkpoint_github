@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'achat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="panier">
+        <h1>Votre Panier</h1>
+        <div class="article" data-nom="Chemise" data-prix="5000" data-quantite="4">
+            <img src="chemise.jpeg" alt="Chemise">
+            <span class="nom">Chemise</span>
+            <span class="prix-unitaire">5000 FCFA</span>
+            <button class="moins">-</button>
+            <span class="quantite">4</span>
+            <button class="plus">+</button>
+            <span class="prix-total">20000 FCFA</span>
+            <button class="supprimer">Supprimer</button>
+            <button class="aimer"></button>
+        </div>
+        <div class="article" data-nom="Pantalon" data-prix="8000" data-quantite="2">
+            <img src="pantalon.jpeg" alt="Pantalon">
+            <span class="nom">Pantalon</span>
+            <span class="prix-unitaire">8000 FCFA</span>
+            <button class="moins">-</button>
+            <span class="quantite">2</span>
+            <button class="plus">+</button>
+            <span class="prix-total">16000 FCFA</span>
+            <button class="supprimer">Supprimer</button>
+            <button class="aimer"></button>
+        </div>
+        <div class="article" data-nom="Chaussures" data-prix="10000" data-quantite="2">
+            <img src="chaussures.jpeg" alt="Chaussures">
+            <span class="nom">Chaussures</span>
+            <span class="prix-unitaire">10000 FCFA</span>
+            <button class="moins">-</button>
+            <span class="quantite">2</span>
+            <button class="plus">+</button>
+            <span class="prix-total">20000 FCFA</span>
+            <button class="supprimer">Supprimer</button>
+            <button class="aimer"></button>
+        </div>
+        <div id="total">
+            <span>Total:</span>
+            <span id="prix-total-global">56000 FCFA</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
